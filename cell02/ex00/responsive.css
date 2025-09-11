@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+table {
+  width: 80%;               /* กว้าง 80% ของจอเหมือน Ex5 */
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td {
+  width: 50%;               /* แต่ละช่องครึ่งตาราง */
+  height: 100px;            /* ความสูงตายตัว */
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.first { background-color: #b6cc7a; }   /* เขียวอ่อน */
+.second { background-color: #f4b6a4; }  /* ชมพูอ่อน */
+
+/* Responsive เมื่อหน้าจอเล็ก */
+@media (max-width: 600px) {
+  table { width: 100%; }    /* ยืดเต็มจอ */
+  td {
+    display: block;         /* ให้ cell ซ้อนกันแนวตั้ง */
+    width: 100%;
+    height: 80px;           /* ลดความสูงนิดนึงบนมือถือ */
+  }
+}

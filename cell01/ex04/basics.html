@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: sans-serif;
+            margin: 0; /* ลบ margin เริ่มต้นของ body ออก */
+            padding: 0; /* ลบ padding เริ่มต้นของ body ออก */
+        }
+
+        .main-title {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            padding-top: 30px; /* เพิ่ม padding ด้านบนเพื่อให้หัวข้อไม่ติดขอบ */
+        }
+
+        .shops-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* ทำให้รูปขึ้นบรรทัดใหม่ได้เมื่อหน้าจอแคบ */
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .shop {
+            text-align: center;
+            /* กำหนดความกว้างและความสูงที่แน่นอนสำหรับแต่ละ shop */
+            width: 300px; /* หรือขนาดอื่นที่คุณต้องการ เช่น 45% */
+            height: 250px; /* กำหนดความสูงที่แน่นอน */
+            display: flex; /* ใช้ flex เพื่อจัดเนื้อหาภายใน shop */
+            flex-direction: column; /* จัดเรียงเนื้อหาใน shop เป็นแนวตั้ง */
+            justify-content: space-between; /* จัดช่องว่างระหว่างรูปกับลิงก์ */
+            background-color: rgba(255, 255, 255, 0.1); /* เพิ่มพื้นหลังจางๆ ให้แต่ละ shop (ทางเลือก) */
+            padding-bottom: 10px; /* เพิ่ม padding ด้านล่าง */
+        }
+
+        .shop img {
+            width: 100%;             /* ทำให้รูปภาพกว้างเต็มกรอบของ .shop */
+            height: 200px;           /* กำหนดความสูงที่แน่นอนสำหรับรูปภาพ */
+            object-fit: cover;       /* **สำคัญ:** ทำให้รูปภาพถูกตัดส่วนที่ไม่จำเป็นออกเพื่อพอดีกรอบโดยไม่ผิดสัดส่วน */
+            border: 3px solid white;
+            box-sizing: border-box;  /* รวม border เข้าไปใน width/height ที่กำหนด */
+        }
+
+        .shop p {
+            margin-top: 10px;        /* เพิ่มระยะห่างด้านบนของลิงก์ */
+            margin-bottom: 0;        /* ลบ margin ด้านล่างของ p */
+        }
+
+        .shop a {
+            color: white;            /* เปลี่ยนสีลิงก์เป็นสีขาว */
+            text-decoration: none;   /* ลบขีดเส้นใต้ลิงก์ */
+            font-weight: bold;
+        }
+
+        .shop a:hover {
+            text-decoration: underline; /* แสดงขีดเส้นใต้เมื่อเอาเมาส์ไปชี้ */
+        }
+
+        hr {
+            border: none;             /* ลบเส้นขอบเริ่มต้น */
+            border-top: 1px solid white; /* สร้างเส้นใหม่ที่เป็นสีขาวและบางลง */
+            margin: 40px auto;        /* จัดกึ่งกลางและเพิ่มระยะห่าง */
+            width: 80%;               /* กำหนดความกว้างของเส้น */
+        }
+        
+        footer {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title"> ♥basics_html</h1>
+
+    <div class="shops-container">
+        <div class="shop">
+            <img src="https://statichk.aliprice.com/agent/thumb/o/agent646ddf41d6648.jpeg" alt="Online Shop Taobao">
+            <p><a href="https://www.taobao.com/" target="_blank">Visit Taobao</a></p>
+        </div>
+        <div class="shop">
+            <img src="https://www.truedigitalpark.com/public/uploads/shop/c633f67f878f793b6be9e22575a21eca.png" alt="Online Shop BNN">
+            <p><a href="https://www.bnn.in.th/th" target="_blank">Visit BNN</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        &copy; wil 2021
+    </footer>
+
+</body>
+</html>
