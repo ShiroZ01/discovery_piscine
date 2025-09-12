@@ -1,0 +1,61 @@
+/* reset margin + padding */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* menu หลัก */
+nav {
+  background-color: #333;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative; /* สำคัญ: ใช้สำหรับ dropdown */
+}
+
+.menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu > li > a:hover {
+  background-color: #555;
+}
+
+/* ซ่อน dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* วางใต้เมนูหลัก */
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: #666;
+}
+
+/* แสดง dropdown เวลา hover */
+.menu > li:hover .dropdown {
+  display: block;
+}

@@ -1,0 +1,9 @@
+#balloon {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 50px auto;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
