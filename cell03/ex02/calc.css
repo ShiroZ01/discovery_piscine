@@ -1,0 +1,84 @@
+:root {
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  background: #0f1220;
+  color: #e9ecf1;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.card {
+  width: min(680px, 100%);
+  background: #151935;
+  border: 1px solid #2a2f57;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  padding: 24px;
+}
+.card h1 {
+  margin: 0 0 8px 0;
+  font-size: clamp(20px, 2.2vw, 26px);
+}
+.sub {
+  color: #b7bdd6;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input[type="text"], select {
+  background: #0f1330;
+  color: #eef3ff;
+  border: 1px solid #2d3366;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  width: 160px;
+}
+select {
+  width: 90px;
+  text-align-last: center;
+  cursor: pointer;
+}
+input[type="text"]::placeholder { color: #7e86b3; }
+button {
+  border: 0;
+  background: #5b7cfe;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .05s ease, filter .15s ease;
+}
+button:active { transform: translateY(1px) scale(.99); }
+.help {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #9aa3cf;
+}
+.footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #8f96bd;
+  font-size: 12px;
+}
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: #0e1230;
+  border: 1px solid #2b3160;
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: #cbd3ff;
+}
