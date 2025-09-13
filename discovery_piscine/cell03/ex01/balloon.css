@@ -1,0 +1,17 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  
+}
+
+#balloon {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+  transition: width 100ms linear, height 100ms linear, background-color 100ms linear;
+  cursor: pointer;
+  outline: none;
+}

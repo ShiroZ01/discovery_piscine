@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>It’s over 9000 – Basic Calculator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="calc.css" />
+</head>
+<body>
+  <main class="card" aria-labelledby="title">
+    <h1 id="title">It’s over 9000 – Calculator</h1>
+    <p class="sub">ใส่จำนวนเต็มไม่ติดลบ (≥ 0) เลือกตัวดำเนินการ แล้วกด <span class="kbd">Try me!</span></p>
+
+    <form id="calc-form" novalidate>
+      <input id="left" type="text" inputmode="numeric" placeholder="Left (e.g. 12)" />
+      <select id="op">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+        <option value="%">%</option>
+      </select>
+      <input id="right" type="text" inputmode="numeric" placeholder="Right (e.g. 3)" />
+      <button id="submit" type="submit">Try me!</button>
+    </form>
+
+    <p class="help">กฎ: ต้องเป็นจำนวนเต็มไม่ติดลบ • ถ้าหารด้วยศูนย์หรือ mod ศูนย์ → “It’s over 9000!”</p>
+
+  </main>
+
+  <script src="calc.js"></script>
+</body>
+</html>

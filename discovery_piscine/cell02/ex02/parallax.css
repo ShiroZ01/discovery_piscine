@@ -1,0 +1,40 @@
+/* รีเซ็ต margin/padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ส่วน parallax background */
+.parallax {
+  height: 100vh; /* สูงเท่าหน้าจอ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  background-attachment: fixed;  /* ทำให้รูปติดพื้นหลัง (เอฟเฟกต์ parallax) */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* กำหนดรูปแต่ละ section */
+.img1 {
+  background-image: url("https://wallpapers.com/images/featured/anime-black-and-white-kvprlq5w5vvcar6g.jpg"); /* เปลี่ยนเป็นรูปของคุณ */
+}
+
+.img2 {
+  background-image: url("https://www.hdwallpapers.in/download/demon_slayer_black_and_white_kyojuro_rengoku_with_sword_hd_anime-1920x1080.jpg"); /* เปลี่ยนเป็นรูปของคุณ */
+}
+
+/* block ตรงกลาง */
+.content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 24px;
+}

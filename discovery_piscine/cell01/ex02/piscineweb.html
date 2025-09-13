@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piscine Web</title>
+    <style>
+        /* จัดเนื้อหาหลักให้อยู่กึ่งกลาง */
+        body {
+            text-align: center;
+            font-family: sans-serif; /* เลือกฟอนต์ที่อ่านง่าย (แนะนำ) */
+        }
+
+        /* สร้าง container สำหรับจัดวางรูปภาพ */
+        .image-container {
+            display: flex;            /* ใช้ Flexbox เพื่อจัดเรียงไอเท็มข้างใน */
+            justify-content: center;  /* จัดให้อยู่กึ่งกลางแนวนอน */
+            flex-wrap: wrap;          /* ถ้าหน้าจอแคบ ให้รูปขึ้นบรรทัดใหม่ได้ */
+            gap: 20px;                /* สร้างช่องว่างระหว่างรูป */
+        }
+
+        /* จัดการกลุ่มรูปภาพและคำบรรยาย */
+        figure {
+            margin: 0;                /* ลบ margin เริ่มต้นของ figure ออก */
+            width: 45%;               /* กำหนดความกว้าง */
+            max-width: 400px;         /* กำหนดความกว้างสูงสุด ไม่ให้รูปใหญ่เกินไป */
+        }
+
+        /* กำหนดสไตล์ให้รูปภาพ */
+        img {
+            width: 100%;              /* ทำให้รูปภาพกว้างเต็มกรอบของ figure */
+            border-radius: 8px;       /* ทำให้ขอบรูปมน */
+        }
+
+        /* กำหนดสไตล์ให้คำบรรยายภาพ */
+        figcaption {
+            margin-top: 8px;          /* เพิ่มระยะห่างด้านบนเล็กน้อย */
+            font-style: italic;       /* ทำให้เป็นตัวเอียง */
+            color: #555;              /* ทำให้สีข้อความอ่อนลงเล็กน้อย */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Piscine Web</h1>
+
+    <div class="image-container">
+
+        <figure>
+            <img src="https://i0.wp.com/www.technollama.co.uk/wp-content/uploads/2016/03/manny-cat-takes-selfies-dogs-gopro-9.jpg" alt="MEAOWWWWW">
+            <figcaption>MEAOWWWWW</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://t3.ftcdn.net/jpg/06/15/48/68/360_F_615486892_aozUyTfkyojEl6WJ2Gq8GtTvLLOTmHRV.jpg" alt="LooK AT THIS CAMERA">
+            <figcaption>LooK AT THIS CAMERA</figcaption>
+        </figure>
+
+    </div>
+
+</body>
+</html>
